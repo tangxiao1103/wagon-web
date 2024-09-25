@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+/* 全局字体设置 */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* 文字居中 */
+}
+
+/* 设置渐变背景色 */
+body {
+    background: linear-gradient(to bottom right, #c3e0f1, #f8cccc);
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 70vh; /* 70% 视口高度，调整为更短 */
+    background-image: url("../images/web2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;
+    flex-direction: column;
+}
+
+.news .content {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* 各个 section 的样式 */
+section {
+    padding: 20px 0;
+    background-color: transparent; 
+}
+
+section.name {
+    border: none; /* 移除边框 */
+    box-shadow: none; /* 移除阴影 */
+}
+
+/* h1 样式：字体加粗并放大 */
+h1 {
+    color:#beb7ed;
+    font-size: 5vw; /* 使用vw单位实现响应式放大 */
+    font-weight: 900; /* 更加粗的字体 */
+    margin-bottom: 20px;
+}
+
+/* h2 样式：字体加粗并放大 */
+h2 {
+    font-size: 3vw; /* 你可以根据需要调整vw单位 */
+    font-weight: 700; /* 加粗字体 */
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-size: 2vw; /* 使用vw单位以响应式变化 */
+    color: white; /* 保持白色 */
+    margin-bottom: 20px; /* 给段落之间增加间距 */
+}
+
+
+.subscription-title {
+    font-size: 2vw !important; /* 调整字体大小 */
+}
+
+.description-text {
+    color: #6a5acd; 
+}
+
+/* 页脚的整体设计 */
+footer {
+    background-color: #decef6; /* 背景色 */
+    padding: 20px 0; /* 上下内边距 */
+    text-align: center; /* 文字居中 */
+    width: 100%; /* 占据整个页面的宽度 */
+    position: relative; /* 让页脚固定在底部 */
+    bottom: 0;
+}
+
+/* 页脚内文字样式 */
+footer p.bar {
+    color: #000000b1; /* 文字颜色*/
+    font-size: 1rem; /* 初始字体大小 */
+    margin: 0; /* 移除默认的段落间距 */
+    line-height: 1.5; /* 行高 */
+}
+
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .subscription-title {
+        font-size: 5vw; /* 小屏幕上字体变大一些 */
+    }
+
+    .email-input {
+        font-size: 3.5vw;
+        width: 60vw;
+    }
+
+    .submit-button {
+        font-size: 3.5vw;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscription-title {
+        font-size: 6vw; /* 更小屏幕上进一步调整字体大小 */
+    }
+
+    .email-input {
+        font-size: 4.5vw;
+        width: 80vw;
+    }
+
+    .submit-button {
+        font-size: 4.5vw;
+    }
+}
+
+/* card 响应式设计 */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .apply-button {
+        font-size: 1rem;
+    }
+}
+
+/* footer响应式设计：小屏幕时文字变小 */
+@media (max-width: 768px) {
+    footer p.bar {
+        font-size: 0.875rem; /* 小屏幕时字体变小 */
+    }
+}
+
+
+
